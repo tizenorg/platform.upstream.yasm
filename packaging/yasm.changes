@@ -1,3 +1,6 @@
+* Sun Apr 14 2013 Anas Nashif <anas.nashif@intel.com> upstream/1.2.0@efcd551
+- Do not include build date
+
 * Sun Apr 14 2013 Anas Nashif <anas.nashif@intel.com> upstream/1.2.0@20d3a58
 - Imported Upstream version 1.2.0
 
