@@ -1,12 +1,11 @@
 Name:           yasm
 Version:        1.2.0
 Release:        1
-License:        BSD
+License:        BSD-2-Clause or BSD-3-Clause
 Summary:        Yasm Modular Assembler
 Url:            http://yasm.tortall.net/
 Group:          System/Libraries
 Source0:        %{name}-%{version}.tar.gz
-
 BuildRequires:  binutils-devel
 
 %description
@@ -26,6 +25,7 @@ make %{?_smp_mflags}
 %make_install
 
 %files
+%license COPYING
 %{_bindir}/yasm
 %{_bindir}/vsyasm
 %{_bindir}/ytasm
