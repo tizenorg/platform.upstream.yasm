@@ -6,6 +6,7 @@ Summary:        Yasm Modular Assembler
 Url:            http://yasm.tortall.net/
 Group:          System/Libraries
 Source0:        %{name}-%{version}.tar.gz
+Source1001: 	yasm.manifest
 BuildRequires:  binutils-devel
 
 %description
@@ -15,6 +16,7 @@ Yasm can be easily integrated into Visual Studio 2005/2008 and 2010 for assembly
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 ./configure --prefix=/usr
@@ -25,6 +27,7 @@ make %{?_smp_mflags}
 %make_install
 
 %files
+%manifest %{name}.manifest
 %license COPYING
 %{_bindir}/yasm
 %{_bindir}/vsyasm
