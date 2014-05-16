@@ -19,7 +19,7 @@ Yasm can be easily integrated into Visual Studio 2005/2008 and 2010 for assembly
 cp %{SOURCE1001} .
 
 %build
-./configure --prefix=/usr
+%configure
 
 make %{?_smp_mflags}
 
